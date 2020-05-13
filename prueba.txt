@@ -1,1 +1,29 @@
 Basic gitFlow
+
+# Clonar repositorio
+git clone https://github.com/my-account/my-repo-name.git .
+
+# Crear rama develop a partir de master
+git checkout -b develop master
+
+# Listar las ramas
+git branch -a
+
+# Crear rama develop en el repositorio remoto
+git push --set-upstream origin develop
+
+# Iniciar GitFlow
+git flow init
+
+##############################################
+
+# Crear característica
+git flow feature start create-contat-form
+
+# Confirmar los cambios que se hayan realizado
+git status
+git add -A
+git commit -m "Create contact-form.php"
+
+# Finalizar característica
+git flow feature finish create-contat-form
