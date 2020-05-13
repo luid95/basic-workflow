@@ -27,3 +27,25 @@ git commit -m "Create contact-form.php"
 
 # Finalizar característica
 git flow feature finish create-contat-form
+
+
+##################################################
+
+# Crear liberación
+git flow release start 1.0.0
+
+# Confirmar los cambios que se hayan realizado
+git status
+git add -A
+git commit -m "Add release notes"
+
+# Finalizar liberación
+git flow release finish 1.0.0
+
+# Subir cambios de la rama develop
+git checkout develop
+git push
+
+# Subir cambios de la rama master
+git checkout master
+git push
