@@ -29,6 +29,17 @@ git commit -m "Create contact-form.php"
 git flow feature finish create-contat-form
 
 
+################################################
+
+#Cambio de branch con git Flow
+git checkout develop
+
+git pull
+
+git checkout feature/#nombere_branch
+
+git merge develop
+
 ##################################################
 
 # Crear liberación
